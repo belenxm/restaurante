@@ -59,7 +59,10 @@
     <section class="dis-esto">
         <div class="container">
             <div class="res-info">
-                <img src="imagesr/nosotros.jpg" alt="">
+                <div>
+                    <img src="imagesr/nosotros.jpg" alt="">
+                </div>
+                
                 <div class="res-des pad-rig">
                     <div class="global">
                         <h2 class="h2-sub">
@@ -96,20 +99,21 @@
     <section class="disco">
         <div class="container">
             <div class="res-info">
-                <div class="global">
-                    <h2 class="h2-sub">
-                        <span class="fil">D</span>escubre
-                    </h2>
-                    <h1 class="head hea-dark">Menu</h1>
-                    <div class="circle">
-                        <i class="fas fa-circle"></i>
+                <div class="res-des">
+                    <div class="global">
+                        <h2 class="h2-sub">
+                            <span class="fil">D</span>escubre
+                        </h2>
+                        <h1 class="head hea-dark">Menu</h1>
+                        <div class="circle">
+                            <i class="fas fa-circle"></i>
+                        </div>
                     </div>
-                </div>
-                <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem id alias nulla laborum repellendus iste modi sint ut. Doloribus nam recusandae molestiae voluptatum officiis, incidunt itaque iusto soluta aut dolor.
-                </p>
-                <a href="#" class="btn cta-btn">Pide el menu</a>
-                    
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <a href="#" class="btn cta-btn">Pide el menu</a>
+            </div>  
                 <div class="image-group pad-rig">
                     <img src="imagesr/menu-1.jpg" alt="">
                     <img src="imagesr/menu-2.jpg" alt="">
@@ -121,11 +125,11 @@
     </section>
 
 
-    <section class=" pb/bt">
+    <section class="pb bt">
         <div class="container">
             <div class="global">
                 <h2 class="h2-sub">
-                    <span class="fill">P</span>latillos
+                    <span class="fil">P</span>latillos
                 </h2>
                 <h1 class="head">Lorem</h1>
             </div>
@@ -135,7 +139,7 @@
     <section>
         <div class="container">
             <div class="res-info">
-                <div class="img-group">
+                <div class="image-group">
                     <img src="imagesr/deli-1.jpg" alt="">
                     <img src="imagesr/deli-2.jpg" alt="">
                 </div>
@@ -159,15 +163,18 @@
         </div>
     </section>
 
+
+
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-content-about">
                     <h4>Nosotros</h4>
                     <div class="circle">
-                        <i class="fas-fa-circle"></i>
+                        <i class="fas fa-circle"></i>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, alias?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, alias</p>
+                     
                 </div>
                 <div class="footer-div">
                     <div class="social-media">
@@ -204,7 +211,19 @@
         </div>
     </footer>
 
+<script>
+    const selectelement = function(element) {
+        return document.querySelector(element);
+    }
 
+    let menutoggle=selectElement('.menu-toggle');
+    let body =selectElement('body');
+
+    menuToggle.addEventlistener('click', function(){
+        body.classList.toggle('open');
+    })
+
+</script>
 
 </body>
 </html>
